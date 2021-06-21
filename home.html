@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BfitClub home</title>
+  <!doctype html>
+  <html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+      </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+    <title>home page</title>
+  </head>
+
+<body>
+  <nav class="navbar navbar-expand-lg dark-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="http://127.0.0.1:5500/index.html">
+        <img
+          src="https://images.unsplash.com/photo-1517963879433-6ad2b056d712?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80"
+          alt="" width="30" height="30" class="d-inline-block align-text-top">
+        BfitClub
+      </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:5500/about%20us.html">about us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:5500/contact%20us.html?">contact us</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+      <div class="mx-2">
+        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">login</button>
+        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">signup</button>
+      </div>
+    </div>
+  </nav>
+</body>
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">get your access</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Sign Up Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Get membership at BfitClub</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="form-group">
+            <label for="cexampleInputPassword1">Confirm Password</label>
+            <input type="password" class="form-control" id="cexampleInputPassword1">
+          </div>
+
+          <button type="submit" class="btn btn-primary">Creat Account</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</html>
+</head>
+
+<body>
+  <h1>your welcome <span class="badge bg-secondary">BfitClub</span></h1>
+  <div class="row">
+    <div class="card">
+      <div class="card w-75">
+        <img
+          src="https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+          class="card-img-top" alt="...">
+        <h5 class="card-title">personal trainig</h5>
+        <p class="card-text">Enjoy 1-1 personal training and take your fitness goals to the next level
+          Train at your convenience with the best trainers who will guide you</p>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1468971050039-be99497410af?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Zml0bmVzc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
+          class="card-img-top" alt="...">
+        <h5 class="card-title">Get access</h5>
+        <p class="card-text">make contact with us to know more about fitness ,diet ,and personal health by
+          professional trainer.</p>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1494597564530-871f2b93ac55?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1402&q=80"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">check habbit</h5>
+          <p class="card-text">here we provide you some tips related with food or daily activities really you
+            appreciate it..</p>
+        </div>
+      </div>
+    </div>
+    <a class="btn btn-primary" href="#" role="button">check more about us</a>
+    <hr>
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/home.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:5500/about%20us.html">about us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:5500/contact%20us.html?">contact us</a>
+      </li>
+    </ul>
+    <hr>
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+      <div class="row">
+        <div class="col-12 col-md">
+          <img class="mb-2"
+            src="https://images.unsplash.com/photo-1517963879433-6ad2b056d712?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80"
+            alt="" width="24" height="19">
+          <small class="d-block mb-3 text-muted">&copy; 2020–2021</small>
+          <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+              <li class="mb-3"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+
+</html>
